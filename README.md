@@ -36,6 +36,27 @@ They allow us to execute a piece of logic without having to declare a function:
 
 # Ternary Operators
 
+They are very handy to minimize the amount of code we write in React.  
+
+An if...else statement takes too many lines:
+```js
+if (age > 20) {
+  let category = "adult"
+} else {
+  let category = "kid"
+}
+```
+
+With a ternary operator:
+```js
+let category = age > 20 ? "adult" : "kid"
+```
+
+Another way to do that is by using "**short circuiting**":
+```js
+let category = (age > 20 && "adult") || "kid"
+```
 
 
-@6/28
+
+@10/28
