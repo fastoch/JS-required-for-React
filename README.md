@@ -87,8 +87,27 @@ const { name, age, isMarried } = person
 ```
 
 We use object destructuring a lot when working with **props**.  
-Props in React (short for **properties**) are a fundamental concept used for passing data from one component to another, specifically from a parent component to its child components.  
+Props in React (short for **properties**) are a fundamental concept used for passing data from one component to another, 
+specifically from a parent component to its child components.  
 
+## The spread operator
 
+If we want to create an object similar to the person object right above, except for the name value, we can do that:
+```js
+const person2 = {...person, name: "Filip"}
+```
 
-@16/28
+The spread operator is also very useful when working with arrays:
+```js
+const names = ["Pedro", "Jack", "Rose"]
+const names2 = [...names, "Jessica"]  // this adds a name to the previous array
+```
+This is how we're going to manipulate and add elements to arrays that are inside of **states**.  
+
+# 3 Fundamental Functions
+
+- map()
+- filter()
+- 
+
+@18/28
