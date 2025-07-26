@@ -25,4 +25,17 @@ const MyComponent = (props) => {
 }
 ```
 
+## Anonymous functions
+
+They allow us to execute a piece of logic without having to declare a function:
+```jsx
+<button>
+  onClick={() => { some logic }}
+</button>
+```
+
+# Ternary Operators
+
+
+
 @5/28
