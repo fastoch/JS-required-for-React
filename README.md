@@ -18,9 +18,11 @@ const DoSomething = () => {
 
 In React, we define components, and components are just functions.  
 ```js
-const MyComponent = () => {
- 
+const MyComponent = (props) => {
+  // some hooks
+  // some helper functions
+  // a return statement containing our JSX 
 }
 ```
 
-@4/28
+@5/28
