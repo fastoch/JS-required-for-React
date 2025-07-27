@@ -161,5 +161,9 @@ const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentV
 // sum is 10
 ```
 
+# Async-Await, Promises, Fetch
 
-@24/28
+Check this repo: https://github.com/fastoch/Asynchronous-JavaScript
+
+
+
