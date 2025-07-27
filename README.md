@@ -115,11 +115,11 @@ This operator is really important in React, because this is how we're going to m
 
 For each element in the array, apply a specific callback function.  
 
-For example, add a string to each element:
+For example, add a string to each element and log the result to the console:
 ```js
 let names = ["Pedro", "Jessica", "John"]
-names.map(() => {
-  
+names.map((name) => {
+  console.log(name + " is awesome!")
 })
 ```
 
@@ -150,4 +150,4 @@ const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentV
 
 
 
-@20/28
+@22/28
