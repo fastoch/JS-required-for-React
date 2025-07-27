@@ -102,12 +102,52 @@ The spread operator is also very useful when working with arrays:
 const names = ["Pedro", "Jack", "Rose"]
 const names2 = [...names, "Jessica"]  // this adds a name to the previous array
 ```
-This is how we're going to manipulate and add elements to arrays that are inside of **states**.  
 
-# 3 Fundamental Functions
+This operator is really important in React, because this is how we're going to manipulate arrays that are inside of **states**.  
 
-- map()
-- filter()
-- 
+# 3 important Functions for Arrays
 
-@18/28
+- .map()
+- .filter()
+- .reduce()
+
+## .map()
+
+For each element in the array, apply a specific callback function.  
+
+For example, add a string to each element:
+```js
+let names = ["Pedro", "Jessica", "John"]
+names.map(() => {
+  
+})
+```
+
+## .filter()
+
+
+
+## .reduce()
+
+- .reduce() takes two arguments: a callback function and, optionally, an initial value.
+- The callback is called once for each element in the array, and it receives:
+  - The accumulator (the running total or result from the previous iteration)
+  - The current value (the current element in the array)
+  - The current index (optional)
+  - The array itself (optional)
+
+If you provide an initial value, the accumulator starts with that.  
+Otherwise, it's set to the first element in the array, and iteration begins at the second element.  
+
+If no initial value is provided and the array is empty, .reduce() will throw an error.  
+
+Example: 
+```js
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+// sum is 10
+```
+
+
+
+@20/28
