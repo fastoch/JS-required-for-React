@@ -123,9 +123,22 @@ names.map((name) => {
 })
 ```
 
+We can use `.map()` to render a React component:
+```jsx
+names.map((name) => {
+  return <h1>{name}</h1>
+})
+```
+
 ## .filter()
 
-
+Remove "Pedro" from the list: 
+```jsx
+let names = ["Pedro", "Jessica", "John"]
+names.filter((name) => {
+  return name !== "Pedro"
+})
+```
 
 ## .reduce()
 
@@ -149,5 +162,4 @@ const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentV
 ```
 
 
-
-@22/28
+@24/28
